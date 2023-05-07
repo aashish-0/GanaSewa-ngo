@@ -16,12 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -31,10 +25,13 @@
         <div class="container">
           <div class="header__row">
             <div class="header__logo">
-              <img src="./assests/images/logo.png" alt="Brand Logo" />
+              <a href="index.html">
+                <img src="./assests/images/logo.png" alt="Brand Logo" />
+              </a>
             </div>
             <div class="header__navigations">
               <ul class="header__nav">
+                <i class="fa-solid fa-xmark"></i>
                 <li class="header__list--items">
                   <a href="#">Resource Center</a>
                 </li>
@@ -45,12 +42,10 @@
                   <a href="#">Past Experience</a>
                 </li>
                 <li class="header__list--items">
-                  <a href="#">About us</a>
-                </li>
-                <li class="header__list--items">
-                  <a href="#">Contact us</a>
+                  <a href="contact.html">About us</a>
                 </li>
               </ul>
+              <i class="fa-solid fa-bars"></i>
             </div>
             <div class="header__donation">
               <a href="" class="btn btn-primary">Donate</a>
@@ -62,6 +57,7 @@
     <!-- main body -->
     <main>
       <section class="banner">
+        <div class="banner__overlay"></div>
         <div class="container">
           <div class="banner__body">
             <div class="banner__head">
@@ -107,22 +103,52 @@
 
       <!-- End Poverty -->
       <section class="poverty">
-        <div class="poverty__wrapper">
-          <div class="poverty__images">
-            <img src="./assests/images/img-1.jpg" alt="Poverty Image-1" />
-            <img src="./assests/images/img-2.jpg" alt="Poverty Image-2" />
-          </div>
-          <div class="poverty__donation">
-            <div class="poverty__heading">
-              <p>We can change <br /><span>Social Condition</span></p>
+        <div class="container">
+          <div class="poverty__wrapper">
+            <div class="poverty__images">
+              <div class="poverty__social">
+                <img
+                  src="./assests/images/social_1.jpg"
+                  alt="Poverty Image-1"
+                />
+                <div class="social__content">
+                  <p>I help</p>
+                  <a href="#">Donate Now</a>
+                </div>
+              </div>
+              <div class="poverty__social">
+                <img
+                  src="./assests/images/social_2.jpg"
+                  alt="Poverty Image-2"
+                />
+                <div class="social__content">
+                  <p>I help</p>
+                  <a href="#">Donate Now</a>
+                </div>
+              </div>
+              <div class="poverty__social">
+                <img
+                  src="./assests/images/social_3.jpg"
+                  alt="Poverty Image-2"
+                />
+                <div class="social__content">
+                  <p>I help</p>
+                  <a href="#">Donate Now</a>
+                </div>
+              </div>
             </div>
-            <div class="poverty__supportText">
-              We are planning to Donate Old Clothes, Biscuit packets and
-              Drinking water. In case you want to help you may please donate
-              Cash. But this work depends on the support of people like you.
-            </div>
-            <div class="poverty__button">
-              <a href="#" class="btn btn-secondary">Donate Now</a>
+            <div class="poverty__donation">
+              <div class="poverty__heading">
+                <p>We can change <br /><span>Social Condition</span></p>
+              </div>
+              <div class="poverty__supportText">
+                We are planning to Donate Old Clothes, Biscuit packets and
+                Drinking water. In case you want to help you may please donate
+                Cash. But this work depends on the support of people like you.
+              </div>
+              <div class="poverty__button">
+                <a href="#" class="btn btn-secondary">Donate Now</a>
+              </div>
             </div>
           </div>
         </div>
@@ -131,55 +157,92 @@
       <!-- Past Experiences -->
       <section class="experiences">
         <div class="container">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
+          <div class="experiences__wrapper">
+            <p class="experiences__head">Training Capacity</p>
+            <div class="experiences__row">
+              <div class="experiences__col">
+                <div class="experiences__cards">
+                  <img
+                    class="experences__image"
+                    src="./assests/images/fazilka.jpg"
+                  />
+                  <p class="experiences__heading">Fazilka</p>
+                  <div class="experiences__text">
+                    <div class="course__name">
+                      <label for="">Course Name: </label>
+                      <p>Sewing Machine operator, Garment Checker</p>
+                    </div>
+                    <div class="machines">
+                      <label for="">Types of Machines</label>
+                      <p>
+                        Single Needle Machine, Inspection Table & other Tools
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
+              <div class="experiences__col">
+                <div class="experiences__cards">
+                  <img
+                    class="experences__image"
+                    src="./assests/images/muktar.jpg"
+                  />
+                  <p class="experiences__heading">Sri Muktsar Sahib</p>
+                  <div class="experiences__text">
+                    <div class="course__name">
+                      <label for="">Course Name: </label>
+                      <p>Sewing Machine operator, Fabric Checker</p>
+                    </div>
+                    <div class="machines">
+                      <label for="">Type of Machines</label>
+                      <p>
+                        Single Needle Machine, Inspection Table & Fabric
+                        Inspection Machine
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content.
-                  </p>
+              <div class="experiences__col">
+                <div class="experiences__cards">
+                  <img
+                    class="experences__image"
+                    src="./assests/images/bijnore.jpg"
+                  />
+                  <p class="experiences__heading">Bijnore</p>
+                  <div class="experiences__text">
+                    <div class="course__name">
+                      <label for="">Course Name: </label>
+                      <p>Sewing Machine operator, Garment Checker</p>
+                    </div>
+                    <div class="machines">
+                      <label for="">Type of Machines</label>
+                      <p>
+                        Single Needle Machine, Inspection Table & other Tools
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
-                  </p>
+              <div class="experiences__col">
+                <div class="experiences__cards">
+                  <img
+                    class="experences__image"
+                    src="./assests/images/Mohendergarh.webp"
+                  />
+                  <p class="experiences__heading">Mohendergarh</p>
+                  <div class="experiences__text">
+                    <div class="course__name">
+                      <label for="">Course Name: </label>
+                      <p>Sewing Machine operator, Garment Checker</p>
+                    </div>
+                    <div class="machines">
+                      <label for="">Type of Machines</label>
+                      <p>
+                        Single Needle Machine, Inspection Table & other Tools
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -241,20 +304,13 @@
               </div>
             </div>
           </div>
-          <div class="footer__copyright">
-            <p>2023 © Gana Sewa. All rights Reserved.</p>
-          </div>
         </div>
       </section>
     </footer>
     <script
-      src="https://kit.fontawesome.com/2d5cd6329c.js"
+      src="https://kit.fontawesome.com/e61851fcf3.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
