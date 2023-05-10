@@ -56,17 +56,22 @@ section {
 }
 @media (min-width: 576px) {
   .container {
-    max-width: 700px;
+    max-width: 550px;
   }
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 900px;
+    max-width: 700px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
   .container {
-    max-width: 1170px;
+    max-width: 950px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
 }
 
@@ -222,7 +227,7 @@ header {
 .header__donation {
   display: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 991px) {
   .header__donation {
     display: block;
   }
@@ -601,12 +606,44 @@ header {
 .contactUs {
   padding-block: 60px;
 }
+.contactUs__wrapper {
+  display: flex;
+  gap: 30px;
+}
+.contactUs__rightside {
+  width: 50%;
+}
+.contactUs__rightside--heading {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 600;
+  color: #F7B661;
+}
+@media (min-width: 1024px) {
+  .contactUs__rightside--heading {
+    font-size: 38px;
+  }
+}
+.contactUs__rightside--text {
+  font-size: 17px;
+  margin-block: 20px;
+}
+@media (min-width: 1024px) {
+  .contactUs__rightside--text {
+    font-size: 24px;
+  }
+}
 .contactUs__head {
   margin-bottom: 20px;
   font-size: 2.5rem;
   color: #1C2530;
   text-align: center;
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  .contactUs form {
+    width: 40%;
+  }
 }
 .contactUs form input,
 .contactUs form textarea {
@@ -767,4 +804,39 @@ header {
 }
 .footer__list--icons i:hover {
   color: #3d5e87;
+}
+
+.training__table {
+  padding: 50px;
+  background-color: #1C2530;
+}
+.training__table--heading {
+  font-size: 3rem;
+  text-align: center;
+  color: #F7B661;
+  margin-bottom: 30px;
+}
+.training__table table {
+  border-collapse: collapse;
+  width: 100%;
+  color: white;
+  margin: auto;
+}
+.training__table th,
+.training__table td {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #F7B661;
+}
+.training__table th {
+  font-size: 1.5em;
+  color: #A5B4FC;
+}
+.training__table td {
+  font-size: 1.2em;
+}
+@media screen and (max-width: 680px) {
+  .training__table .table-container {
+    display: none;
+  }
 }
